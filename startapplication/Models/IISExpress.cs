@@ -72,8 +72,9 @@ namespace startapplication.Models
                 FileName = IIS_EXPRESS,
                 Arguments = arguments.ToString(),
                 RedirectStandardOutput = true,
-                UseShellExecute = false
+                UseShellExecute = false,
             });
+            var t = process.ProcessName;
         }
 
         public string Config { get; protected set; }
